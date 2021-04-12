@@ -1,5 +1,8 @@
+.container{
+  margin: 0;
+}
+
 [class*="cal-cell"] {
-  float: left;
   margin-left: 0;
   min-height: 1px;
 }
@@ -276,7 +279,7 @@
   width: 100%;
 }
 #cal-day-box .day-event {
-  position: relative;
+  position: absolute;
   max-width: 200px;
   overflow: hidden;
 }

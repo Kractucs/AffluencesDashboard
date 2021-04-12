@@ -3,10 +3,9 @@
 					view:"day",
 					events_source: [
 					{
-						"id": 293,
-						"title": "Event 1",
-						"start": 1618253696584, // Milliseconds
-						"end": 1618393696584 // Milliseconds
+						"class": "event-important",
+						"start": 1618236000000, // Milliseconds
+						"end": 1618243200000 // Milliseconds
 					},
 				]
 				});
@@ -14,8 +13,6 @@
 				{
 					events_source: [
 					{
-						"id": 293,
-						"title": "Réservation",
 						"class": "event-important",
 						"start": 1618236000000, // Milliseconds
 						"end": 1618243200000 // Milliseconds
@@ -26,12 +23,9 @@
 				{
 					events_source: [
 					{
-						"id": 293,
-						"title": "Event 1",
-						"url": "http://example.com",
 						"class": "event-important",
-						"start": 1618253696584, // Milliseconds
-						"end": 1618393696584 // Milliseconds
+						"start": 1618236000000, // Milliseconds
+						"end": 1618243200000 // Milliseconds
 					}
 				]
 				});
@@ -39,10 +33,9 @@
 				{
 					events_source: [
 					{
-						"id": 293,
-						"title": "Event 1",
-						"start": 1618253696584, // Milliseconds
-						"end": 1618393696584 // Milliseconds
+						"class": "event-important",
+						"start": 1618236000000, // Milliseconds
+						"end": 1618243200000 // Milliseconds
 					},
 				]
 				});
@@ -50,10 +43,14 @@
 				{
 					events_source: [
 					{
-						"id": 293,
-						"title": "Event 1",
-						"start": 1618253696584, // Milliseconds
-						"end": 1618393696584 // Milliseconds
+						"class": "event-important",
+						"start": 1618236000000, // Milliseconds
+						"end": 1618243200000 // Milliseconds
+					},
+					{
+						"class": "event-important",
+						"start": 1618250400000, // Milliseconds
+						"end": 1618252200000 // Milliseconds
 					},
 				]
 				});
@@ -61,10 +58,9 @@
 				{
 					events_source: [
 					{
-						"id": 293,
-						"title": "Event 1",
-						"start": 1618253696584, // Milliseconds
-						"end": 1618393696584 // Milliseconds
+						"class": "event-important",
+						"start": 1618236000000, // Milliseconds
+						"end": 1618243200000 // Milliseconds
 					},
 				]
 				});
@@ -72,10 +68,9 @@
 				{
 					events_source: [
 					{
-						"id": 293,
-						"title": "Event 1",
-						"start": 1618253696584, // Milliseconds
-						"end": 1618393696584 // Milliseconds
+						"class": "event-important",
+						"start": 1618236000000, // Milliseconds
+						"end": 1618243200000 // Milliseconds
 					},
 				]
 				});
@@ -83,10 +78,9 @@
 				{
 					events_source: [
 					{
-						"id": 293,
-						"title": "Event 1",
-						"start": 1618253696584, // Milliseconds
-						"end": 1618393696584 // Milliseconds
+						"class": "event-important",
+						"start": 1618236000000, // Milliseconds
+						"end": 1618243200000 // Milliseconds
 					},
 				]
 				});
@@ -94,10 +88,9 @@
 				{
 					events_source: [
 					{
-						"id": 293,
-						"title": "Event 1",
-						"start": 1618253696584, // Milliseconds
-						"end": 1618393696584 // Milliseconds
+						"class": "event-important",
+						"start": 1618236000000, // Milliseconds
+						"end": 1618243200000 // Milliseconds
 					},
 				]
 				});
@@ -105,10 +98,9 @@
 				{
 					events_source: [
 					{
-						"id": 293,
-						"title": "Event 1",
-						"start": 1618253696584, // Milliseconds
-						"end": 1618393696584 // Milliseconds
+						"class": "event-important",
+						"start": 1618250400000, // Milliseconds
+						"end": 1618252200000 // Milliseconds
 					},
 				]
 				});
