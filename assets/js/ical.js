@@ -61,12 +61,13 @@ function Get_reservations(resource_id,room){
  // ############################
 
 /*
-* We loop on all rooms and ids provided in the rooms.json file
+* We loop on all rooms and ids provided in the rooms.js file
 */
 data.forEach(room => {
     Get_reservations(room["resource_id"],room["name"])
-});/*
-* On initialise le "calendrier" des heures, il va permetre l'affichage a gauche des heures
+});
+/*
+* We initialize the hours "calendar", it will display on the left of the rooms
 */
 var hours = $("#Hours").calendar(
     {
