@@ -1,15 +1,15 @@
 <div id="cal-day-box">
 	<div class="clearfix cal-row-head">
-		<div class=" text-center" >Salle </div>
+		<div class="text-center" style="min-height: 50px;" >Salle </div>
 	</div>
 	<% if(all_day.length) {%>
 		<div class="clearfix cal-day-hour">
 			<div class="span11 col-xs-11">
 				<% _.each(all_day, function(event){ %>
 					<div class="day-highlight dh-<%= event['class'] %>">
-						<a href="<%= event.url ? event.url : 'javascript:void(0)' %>" data-event-id="<%= event.id %>"
+						<p data-event-id="<%= event.id %>"
 						   data-event-class="<%= event['class'] %>" class="event-item">
-							<%= event.title %></a>
+							<%= event.title %></p>
 					</div>
 				<% }); %>
 			</div>
@@ -22,9 +22,9 @@
 				<% _.each(before_time, function(event){ %>
 					<div class="day-highlight dh-<%= event['class'] %>">
 						<span class="cal-hours pull-right"><%= event.end_hour %></span>
-						<a href="<%= event.url ? event.url : 'javascript:void(0)' %>" data-event-id="<%= event.id %>"
+						<p data-event-id="<%= event.id %>"
 						   data-event-class="<%= event['class'] %>" class="event-item">
-							<%= event.title %></a>
+							<%= event.title %></p>
 					</div>
 				<% }); %>
 			</div>
@@ -45,9 +45,9 @@
 		<% _.each(by_hour, function(event){ %>
 			<div class="pull-left day-event day-highlight dh-<%= event['class'] %>" style="float:left; margin-top: <%= (event.top * 30) %>px; height: <%= (event.lines * 30) %>px">
 				<span class="cal-hours"><%= event.start_hour %> - <%= event.end_hour %></span>
-				<a href="<%= event.url ? event.url : 'javascript:void(0)' %>" data-event-id="<%= event.id %>"
+				<p data-event-id="<%= event.id %>"
 				   data-event-class="<%= event['class'] %>" class="event-item">
-					<%= event.title %></a>
+					<%= event.title %></p>
 			</div>
 		<% }); %>
 	</div>
@@ -58,9 +58,9 @@
 			<% _.each(after_time, function(event){ %>
 			<div class="day-highlight dh-<%= event['class'] %>">
 				<span class="cal-hours"><%= event.start_hour %></span>
-				<a href="<%= event.url ? event.url : 'javascript:void(0)' %>" data-event-id="<%= event.id %>"
+				<p data-event-id="<%= event.id %>"
 				   data-event-class="<%= event['class'] %>" class="event-item">
-					<%= event.title %></a>
+					<%= event.title %></p>
 			</div>
 			<% }); %>
 		</div>
