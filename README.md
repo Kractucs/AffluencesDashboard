@@ -35,6 +35,7 @@ Here you go ! Host it on a web server and you are ready to go !
 ## Built With
 
 * [Bootstrap-Calendar](https://github.com/Serhioromano/bootstrap-calendar) - A Full view calendar based on Twitter Bootstrap - @Serhioromano
+* Jquerry, underscore.js and all libs needed by bootstrap-calendar.
 * [Ical.js](https://github.com/mozilla-comm/ical.js/) - Parse the iCalendar format using JavaScript - @mozilla-comm
 
 ## Authors
