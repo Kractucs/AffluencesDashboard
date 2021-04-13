@@ -1,4 +1,4 @@
-# Affluences reservations
+# Affluences Dashboard
 
 Display the reservations of several rooms in the form of a dashboard using the unofficial [Affluences](https://affluences.com) API
 
