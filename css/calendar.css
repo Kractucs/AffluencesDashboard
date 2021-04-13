@@ -1,5 +1,6 @@
 .container{
-  margin: 0;
+  width: 100%;
+  min-width: 100%;
 }
 
 [class*="cal-cell"] {
