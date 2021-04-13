@@ -1,40 +1,47 @@
 <!DOCTYPE html>
 	<html>
 	<head>
-		<title>Reservations</title>
-		<!-- FontAwesome JS -->
-		<script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+		<meta charset="utf-8">
+		<!-- Primary Meta Tags -->
+		<title>Réservations Affluences</title>
+		<meta name="title" content="Affluences reservations">
+		<meta name="description" content="Display the reservations of several rooms in the form of a dashboard using the Affluence API">
+		<meta name="author" content="Thomas Boeglin">
 		<!-- Jquerry Javascript -->
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
 		<!-- Bootstrap Javascript -->
-		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js" integrity="sha512-XKa9Hemdy1Ui3KSGgJdgMyYlUg1gM+QhL6cnlyTe2qzMCYm4nAZ1PsVerQzTTXzonUR+dmswHqgJPuwCq1MaAg==" crossorigin="anonymous"></script>
 		<!-- Global CSS -->
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css" integrity="sha512-P5MgMn1jBN01asBgU0z60Qk4QxiXo86+wlFahKrsQf37c9cro517WzVSPPV1tDKzhku2iJ2FVgL67wG03SGnNA==" crossorigin="anonymous" />
 		<!-- Theme CSS -->
-		<link rel="stylesheet" href="css/calendar.css">
+		<link rel="stylesheet" href="assets/css/calendar.css">
 	</head>
 	<body>
 		<div class="container">
 		  <div class="row">
 			<div class="col-sm" id="Hours"></div>
-			<div class="col-sm" id="Salle1"></div>
-			<div class="col-sm" id="Salle2"></div>
-			<div class="col-sm" id="Salle3"></div>
-			<div class="col-sm" id="Salle4"></div>
-			<div class="col-sm" id="Salle5"></div>
-			<div class="col-sm" id="Salle6"></div>
-			<div class="col-sm" id="Salle7"></div>
-			<div class="col-sm" id="Salle8"></div>
-			<div class="col-sm" id="Salle9"></div>
-			<div class="col-sm" id="Salle10"></div>
+			<!-- Add rooms under this lines -->
+			<div class="col-sm" id="room1"></div>
+			<div class="col-sm" id="room2"></div>
+			<div class="col-sm" id="room3"></div>
+			<div class="col-sm" id="room4"></div>
+			<div class="col-sm" id="room5"></div>
+			<div class="col-sm" id="room6"></div>
+			<div class="col-sm" id="room7"></div>
+			<div class="col-sm" id="room8"></div>
+			<div class="col-sm" id="room9"></div>
+			<div class="col-sm" id="room10"></div>
 		  </div>
 		</div>
 		<!-- Underscore Javascript -->
-		<script type="text/javascript" src="js/underscore-min.js"></script>
+		<script type="text/javascript" src="assets/js/underscore-min.js"></script>
 		<!-- ICAL Javascript -->
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/ical.js/1.4.0/ical.min.js" ></script>
-		<script type="text/javascript" src="js/calendar.js"></script>
-		<script type="text/javascript" src="js/ical.js"></script>
-		<script type="text/javascript" src="js/salles.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/ical.js/1.4.0/ical.min.js" integrity="sha512-4WiFjDu7uvt/4Yw48TE/yP5GqZE98yjsYiexx2UDCn8ZP145Uu0BexApj2mB1eHWX1u5DhZLN1jeHVPwwW+How==" crossorigin="anonymous"></script>
+		<!-- Custom JS -->
+		<script type="text/javascript" src="assets/js/calendar.js"></script>
+		<!-- Rooms decalaration -->
+		<script type="text/javascript" src="rooms.js"></script>
+		<!-- Custom JS -->
+		<script type="text/javascript" src="assets/js/ical.js"></script>
 		</body>
 	</html>

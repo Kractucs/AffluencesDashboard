@@ -1,6 +1,19 @@
-function Get_reservations(resource_id,salle){
+ // #############
+ // # Functions #
+ // #############
+
+/**
+ * @author Thomas Boeglin
+ * @description This function will create a calendar in the specified html room tag from the ressource_id provided
+ *
+ * @resource_id The ressource_id from the Affluences API
+ * @room the id of the room tag in the HTML code
+ */
+function Get_reservations(resource_id,room){
+    // Gathering informations from the afflences API using the ressource_id
     jQuery.get('https://reservation.affluences.com/api/reservations/ical?resource_id='+resource_id+'&days=0', function(data) {
 
+        // Parsing data with the ical.js library
         var jcalData = ICAL.parse(data);
         var vcalendar = new ICAL.Component(jcalData);
         var name = vcalendar.getFirstPropertyValue('name');
@@ -15,11 +28,15 @@ function Get_reservations(resource_id,salle){
             start_times.push(start_time)
             end_times.push(end_time)
         });
-        $("#".concat(salle)).calendar(
+        /*
+        * From here, we get all the starts and ends of events and the name of the room
+        * We can create our calendar
+        */
+        $("#".concat(room)).calendar(
             {
                 view:"day",
                 events_source: function(){
-                    events = []
+                    var events = []
                     start_times.forEach(time =>
                         events.push(
                         {
@@ -31,23 +48,26 @@ function Get_reservations(resource_id,salle){
                     )
                     return events}
             });
-
-        document.getElementById(salle).getElementsByClassName("text-center")[0].textContent = name
+        /*
+        * The calendar is now created we will rename the name of the room on top of the calendar
+        */
+        document.getElementById(room).getElementsByClassName("text-center")[0].textContent = name
 
     });
 }
 
+ // ############################
+ // # Main program starts here #
+ // ############################
 
-Get_reservations(23218,"Salle1")
-Get_reservations(23215,"Salle2")
-Get_reservations(23216,"Salle3")
-Get_reservations(23217,"Salle4")
-Get_reservations(23214,"Salle5")
-Get_reservations(23219,"Salle6")
-Get_reservations(23220,"Salle7")
-Get_reservations(23221,"Salle8")
-Get_reservations(23222,"Salle9")
-Get_reservations(23223,"Salle10")
+/*
+* We loop on all rooms and ids provided in the rooms.json file
+*/
+data.forEach(room => {
+    Get_reservations(room["resource_id"],room["name"])
+});/*
+* On initialise le "calendrier" des heures, il va permetre l'affichage a gauche des heures
+*/
 var hours = $("#Hours").calendar(
     {
         view: 'hour',
