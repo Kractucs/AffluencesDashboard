@@ -1109,6 +1109,8 @@ if(!String.prototype.formatNum) {
 	Calendar.prototype._update_day = function() {
 		$('#cal-day-panel').height($('#cal-day-panel-hour').height());
 	};
+	Calendar.prototype._update_hour = function() {
+	};
 
 	Calendar.prototype._update_week = function() {
 	};
