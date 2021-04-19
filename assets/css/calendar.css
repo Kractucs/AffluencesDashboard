@@ -9,6 +9,7 @@
 }
 .cal-context{
   padding: 0;
+  border-left: 1px black solid;
 }
 .cal-row-fluid {
   width: 100%;
@@ -281,7 +282,8 @@
 }
 #cal-day-box .day-event {
   position: absolute;
-  max-width: 200px;
+  max-width: 99%;
+  width: 99%;
   overflow: hidden;
 }
 #cal-day-box .day-highlight {
