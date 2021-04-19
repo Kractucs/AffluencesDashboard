@@ -26,7 +26,7 @@ Repeat this step to fetch data for every room you want to add to the dashboard.
 
 ### Installing
 
-Start by cloning this repo and editing the `rooms.js` file with the informations you gathered on the [Affluences](http://affluences.com) website. you can let `"name": "roomX"` inside this file, it has relation with the REAL name of the room.
+Start by cloning this repo and editing the `rooms.js` file with the informations you gathered on the [Affluences](http://affluences.com) website. you can let `"name": "roomX"` inside this file, it has no relation with the REAL name of the room.
 
 In the `index.html` file add the exact number of rooms you need and match the `id` with the `name` inside the  `rooms.js` file.
 
